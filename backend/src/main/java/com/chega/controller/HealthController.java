@@ -15,7 +15,7 @@ public class HealthController {
         return Map.of(
                 "aplicacao", "CHEGA",
                 "status", "online",
-                "mensagem", "Você não precisa descobrir tudo sozinho."
+                "mensagem", "Você não precisa descobrir tudo sozinho. Joffre"
         );
     }
 }
