@@ -1,0 +1,19 @@
+# Variáveis e segredos
+.env
+
+# Java e Maven
+backend/target/
+*.class
+
+# React e Node
+frontend/node_modules/
+frontend/dist/
+
+# Editores
+.vscode/
+.idea/
+*.iml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
