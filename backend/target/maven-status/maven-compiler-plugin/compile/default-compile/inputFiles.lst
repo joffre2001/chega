@@ -1,2 +1,13 @@
 C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\BackendApplication.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\config\PasswordConfig.java
 C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\controller\HealthController.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\exception\EmailAlreadyRegisteredException.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\dto\CreateUserRequest.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\dto\UserResponse.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\SupportedLanguage.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\User.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\UserController.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\UserRepository.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\UserRole.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\UserService.java
+C:\Users\Oby Soft\Documents\chega\backend\src\main\java\com\chega\user\UserStatus.java

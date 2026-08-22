@@ -1,2 +1,12 @@
+com\chega\user\User.class
+com\chega\user\dto\CreateUserRequest.class
+com\chega\config\PasswordConfig.class
+com\chega\user\dto\UserResponse.class
+com\chega\user\SupportedLanguage.class
+com\chega\user\UserService.class
 com\chega\BackendApplication.class
 com\chega\controller\HealthController.class
+com\chega\user\UserStatus.class
+com\chega\user\UserRole.class
+com\chega\user\UserRepository.class
+com\chega\exception\EmailAlreadyRegisteredException.class
