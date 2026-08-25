@@ -74,4 +74,55 @@ public class GlobalExceptionHandler {
 
                 return ResponseEntity.status(status).body(error);
         }
+
+        @ExceptionHandler(MigrantProfileAlreadyExistsException.class)
+        public ResponseEntity<ApiError> handleProfileAlreadyExists(
+                        MigrantProfileAlreadyExistsException exception,
+                        HttpServletRequest request) {
+                HttpStatus status = HttpStatus.CONFLICT;
+
+                ApiError error = new ApiError(
+                                Instant.now(),
+                                status.value(),
+                                status.getReasonPhrase(),
+                                exception.getMessage(),
+                                request.getRequestURI(),
+                                Map.of());
+
+                return ResponseEntity.status(status).body(error);
+        }
+
+        @ExceptionHandler(ConsentRequiredException.class)
+        public ResponseEntity<ApiError> handleConsentRequired(
+                        ConsentRequiredException exception,
+                        HttpServletRequest request) {
+                HttpStatus status = HttpStatus.BAD_REQUEST;
+
+                ApiError error = new ApiError(
+                                Instant.now(),
+                                status.value(),
+                                status.getReasonPhrase(),
+                                exception.getMessage(),
+                                request.getRequestURI(),
+                                Map.of());
+
+                return ResponseEntity.status(status).body(error);
+        }
+
+        @ExceptionHandler(MigrantProfileNotFoundException.class)
+        public ResponseEntity<ApiError> handleProfileNotFound(
+                        MigrantProfileNotFoundException exception,
+                        HttpServletRequest request) {
+                HttpStatus status = HttpStatus.NOT_FOUND;
+
+                ApiError error = new ApiError(
+                                Instant.now(),
+                                status.value(),
+                                status.getReasonPhrase(),
+                                exception.getMessage(),
+                                request.getRequestURI(),
+                                Map.of());
+
+                return ResponseEntity.status(status).body(error);
+        }
 }
