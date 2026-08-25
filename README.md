@@ -129,7 +129,7 @@ Roadmap
 
 -[---] Fundação do backend.
 
--[x] PostgreSQL com Docker Compose.
+- [x] PostgreSQL com Docker Compose.
 
 - [x] Flyway e primeira migration.
 
