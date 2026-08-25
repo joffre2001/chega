@@ -114,6 +114,17 @@ Tratamento padronizado de erros.
 
 Respostas HTTP 201, 400 e 409.
 
+- Login com e-mail e senha.
+- Geração de JWT assinado.
+- Validação de assinatura e expiração do token.
+- Autenticação stateless com Spring Security.
+- Endpoint protegido para consultar o usuário autenticado.
+
+- Testes unitários do cadastro de usuário.
+- Testes unitários da autenticação.
+- Testes de geração, expiração e adulteração de JWT.
+- Testes do filtro de autenticação JWT.
+
 Roadmap
 
 -[---] Fundação do backend.

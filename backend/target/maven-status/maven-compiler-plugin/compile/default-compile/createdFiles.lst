@@ -8,6 +8,7 @@ com\chega\security\SecurityConfig.class
 com\chega\auth\AuthController.class
 com\chega\auth\dto\LoginRequest.class
 com\chega\exception\ApiError.class
+com\chega\security\JwtAuthenticationFilter.class
 com\chega\exception\GlobalExceptionHandler.class
 com\chega\user\dto\CreateUserRequest.class
 com\chega\exception\InvalidCredentialsException.class
