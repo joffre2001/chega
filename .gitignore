@@ -18,4 +18,4 @@ frontend/dist/
 # Sistema operacional
 .DS_Store
 Thumbs.db
-'@ | Set-Content .gitignore
+'@ | Set-Content .gitignore/backend/target/

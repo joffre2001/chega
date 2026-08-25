@@ -1,5 +1,0 @@
-com\chega\auth\AuthServiceTest.class
-com\chega\backend\BackendApplicationTests.class
-com\chega\user\UserServiceTest.class
-com\chega\security\JwtAuthenticationFilterTest.class
-com\chega\security\JwtServiceTest.class
