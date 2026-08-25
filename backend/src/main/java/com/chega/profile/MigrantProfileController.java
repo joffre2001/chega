@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 import com.chega.profile.dto.CreateMigrantProfileRequest;
 import com.chega.profile.dto.MigrantProfileResponse;
+import com.chega.profile.dto.ProfileOptionsResponse;
 import com.chega.profile.dto.UpdateMigrantProfileRequest;
 
 import jakarta.validation.Valid;
@@ -51,5 +53,12 @@ public class MigrantProfileController {
         return profileService.update(
                 authentication.getName(),
                 request);
+    }
+
+    @GetMapping("/options")
+    public ProfileOptionsResponse findOptions() {
+        return new ProfileOptionsResponse(
+                List.of(MigrationSituation.values()),
+                List.of(PrimaryGoal.values()));
     }
 }

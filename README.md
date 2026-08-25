@@ -139,7 +139,7 @@ Roadmap
 
 - [x] Login e autenticação JWT.
 
-Perfil migratório.
+- [x] Perfil migratório.
 
 Jornada personalizada.
 
