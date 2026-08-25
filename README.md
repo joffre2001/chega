@@ -116,17 +116,17 @@ Respostas HTTP 201, 400 e 409.
 
 Roadmap
 
-Fundação do backend.
+-[---] Fundação do backend.
 
-PostgreSQL com Docker Compose.
+-[x] PostgreSQL com Docker Compose.
 
-Flyway e primeira migration.
+- [x] Flyway e primeira migration.
 
-Módulo de cadastro de usuário.
+- [x] Módulo e cadastro de usuário.
 
-Testes automatizados do cadastro.
+- [x] Testes automatizados do cadastro.
 
-Login e autenticação JWT.
+- [x] Login e autenticação JWT.
 
 Perfil migratório.
 

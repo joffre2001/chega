@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.chega.exception.EmailAlreadyRegisteredException;
+import com.chega.exception.InvalidCredentialsException;
 import com.chega.user.dto.CreateUserRequest;
 import com.chega.user.dto.UserResponse;
 
@@ -18,8 +19,7 @@ public class UserService {
 
     public UserService(
             UserRepository userRepository,
-            PasswordEncoder passwordEncoder
-    ) {
+            PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
@@ -39,12 +39,19 @@ public class UserService {
                 normalizedName,
                 normalizedEmail,
                 passwordHash,
-                request.preferredLanguage()
-        );
+                request.preferredLanguage());
 
         User savedUser = userRepository.save(user);
 
         return UserResponse.from(savedUser);
+    }
+
+    public UserResponse findByEmail(String email) {
+        User user = userRepository
+                .findByEmailIgnoreCase(email)
+                .orElseThrow(InvalidCredentialsException::new);
+
+        return UserResponse.from(user);
     }
 
     private String normalizeName(String name) {
