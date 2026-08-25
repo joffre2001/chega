@@ -1,0 +1,124 @@
+/* ===== NOVO FUNDO DA AUTENTICAÇÃO ===== */
+
+.auth-showcase-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 28px 24px 60px;
+  color: #173f36;
+  background:
+    radial-gradient(
+      circle at 12% 15%,
+      rgba(242, 119, 76, 0.28),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 88% 80%,
+      rgba(93, 164, 139, 0.22),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      #0c2f29 0%,
+      #123f35 45%,
+      #09251f 100%
+    );
+}
+
+.auth-showcase-header {
+  width: min(1080px, 100%);
+  margin: 0 auto 28px;
+}
+
+.auth-showcase-header .brand {
+  color: #ff8258;
+  text-shadow: 0 4px 18px rgba(255, 130, 88, 0.22);
+}
+
+.header-mode-button {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fffaf1;
+  backdrop-filter: blur(12px);
+}
+
+.header-mode-button:hover {
+  border-color: #ff8258;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.auth-showcase-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #f5efe3;
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.36),
+    0 0 0 8px rgba(255, 255, 255, 0.035);
+}
+
+.auth-carousel {
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(255, 255, 255, 0.13),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 5% 100%,
+      rgba(255, 130, 88, 0.2),
+      transparent 38%
+    ),
+    linear-gradient(
+      145deg,
+      #1b594a,
+      #0d352d
+    );
+}
+
+.auth-showcase-form {
+  background:
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(221, 178, 104, 0.12),
+      transparent 35%
+    ),
+    #f5efe3;
+}
+
+.auth-mode-tabs {
+  background: #e5ddcf;
+}
+
+.auth-mode-tabs button.active {
+  background: #fffaf1;
+  color: #133f35;
+}
+
+.auth-showcase-form input,
+.auth-showcase-form select {
+  border-color: #cec4b2;
+  background: #fffaf1;
+}
+
+.auth-showcase-form input:focus,
+.auth-showcase-form select:focus {
+  border-color: #28735f;
+  background: #fffdf8;
+}
+
+.auth-showcase-form .primary-button {
+  background:
+    linear-gradient(
+      135deg,
+      #1b594a,
+      #103e34
+    );
+  box-shadow: 0 12px 25px rgba(16, 62, 52, 0.2);
+}
+
+.auth-showcase-form .primary-button:hover:not(:disabled) {
+  background:
+    linear-gradient(
+      135deg,
+      #246d59,
+      #12483c
+    );
+}
